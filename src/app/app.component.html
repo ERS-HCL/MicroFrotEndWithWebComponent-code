@@ -1,0 +1,140 @@
+<div class="wrapper">
+  <div class="main-panel">
+    <app-navbar></app-navbar>
+    <div class="container">
+      <div class="row d-none">
+        <div class="col-sm-6">
+          <div class="form-inline">
+            <input
+              class="form-control mr-sm-2"
+              #state
+              type="search"
+              placeholder="Send State"
+              aria-label="Search"
+            />
+            <button
+              class="btn btn-secondary my-2 my-sm-0"
+              (click)="sendState(state.value)"
+            >
+              Send State
+            </button>
+          </div>
+          <div>
+            <button
+              class="btn btn-success my-2 my-sm-0"
+              (click)="simulateString()"
+            >
+              Simulate String
+            </button>
+            <button
+              class="btn btn-success my-2 my-sm-0"
+              (click)="simulateMsg(true)"
+            >
+              Simulate 2 True
+            </button>
+            <button
+              class="btn btn-warning my-2 my-sm-0"
+              (click)="simulateMsg(false)"
+            >
+              Simulate 2 False
+            </button>
+          </div>
+          <div>
+            <button
+              class="btn btn-success my-2 my-sm-0"
+              (click)="simulateAMsg(true)"
+            >
+              Simulate 11 True
+            </button>
+            <button
+              class="btn btn-warning my-2 my-sm-0"
+              (click)="simulateAMsg(false)"
+            >
+              Simulate 11 False
+            </button>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="row">
+            <div class="col-sm-6">
+              <card-stats
+                label="Sprint"
+                value="60"
+                color="text-warning"
+                icon="fa-running"
+              ></card-stats>
+            </div>
+            <div class="col-sm-6">
+              <card-stats
+                label="Passing"
+                value="90"
+                color="text-primary"
+                icon="fa-futbol"
+              ></card-stats>
+            </div>
+          </div>
+
+          <skill-progress label="Dribbling" progress="30"></skill-progress>
+          <skill-progress label="Passing" progress="80"></skill-progress>
+          <skill-progress label="Skills" progress="40"></skill-progress>
+          <skill-progress label="Shooting" progress="90"></skill-progress>
+          <skill-progress label="Defense" progress="70"></skill-progress>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <div id="content">
+            <!-- Web Components go here -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="container-fluid">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#/news/newsPage">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#/team/fixture">Teams</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#/players/cards">Players</a>
+          </li>
+        </ul>
+        <div class=" copyright">
+          © <i class="far fa-futbol"></i> EDGE FC
+          <i class=" tim-icons icon-heart-2"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <header>
+  <nav class="navbar navbar-expand-md fixed-top">
+    <a class="navbar-brand" href="#">EDGE FC</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+      aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#/team/fixture">Teams</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#/players/cards">Players</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="sendState('State change from Club Root')">Send Seate</a>
+        </li>>
+      </ul>
+      <div class="form-inline">
+        <input class="form-control mr-sm-2" #state type="search" placeholder="Send State" aria-label="Search">
+        <button class="btn btn-secondary my-2 my-sm-0" (click)="sendState(state.value)">Send State</button>
+      </div>
+    </div>
+  </nav>
+</header> -->

@@ -1,0 +1,169 @@
+<nav class="navbar navbar-expand-lg bg-dark" data-color="orange">
+  <div class="container">
+    <a class="navbar-brand" href="#/news/newsPage"><i class="far fa-futbol"></i>EDGE FC</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarColor01"
+      aria-controls="navbarColor01"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-bar navbar-kebab"></span>
+      <span class="navbar-toggler-bar navbar-kebab"></span>
+      <span class="navbar-toggler-bar navbar-kebab"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#/news/newsPage">News</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#/team/fixture">Teams</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#/players/cards">Players</a>
+        </li>
+      </ul>
+      <!--  <button
+        href="javascript:void(0)"
+        class="btn btn-icon btn-round"
+        data-toggle="modal"
+        data-target="#sendModal"
+      >
+        <span class="badge badge-light">9</span>
+        <i class="fas fa-paper-plane"></i>
+      </button> -->
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <a
+            data-toggle="modal"
+            data-target="#sendModal"
+            href="javascript:void(0)"
+            ngbdropdowntoggle=""
+            class="dropdown-toggle nav-link"
+            aria-expanded="false"
+            ><div *ngIf="showStatus" class="notification d-none d-lg-block d-xl-block"></div>
+            <i class="icon-bell-55 tim-icons"></i>
+            <p class="d-lg-none">Notifications</p></a
+          >
+        </li>
+        <li ngbdropdown="" class="nav-item dropdown">
+          <a
+            aria-haspopup="true"
+            data-toggle="dropdown"
+            href="javascript:void(0)"
+            ngbdropdowntoggle=""
+            class="dropdown-toggle nav-link"
+            aria-expanded="false"
+            ><div class="photo">
+              <img alt="Profile Photo" src="assets/img/anime3.png" />
+            </div>
+            <b class="caret d-none d-lg-block d-xl-block"></b>
+            <p class="d-lg-none">Log out</p></a
+          >
+          <ul ngbdropdownmenu="" class="dropdown-navbar dropdown-menu">
+            <li class="nav-link">
+              <a
+                href="javascript:void(0)"
+                ngbdropdownitem=""
+                class="dropdown-item nav-item"
+              >
+                Profile
+              </a>
+            </li>
+            <li class="nav-link">
+              <a
+                href="javascript:void(0)"
+                ngbdropdownitem=""
+                class="dropdown-item nav-item"
+              >
+                Settings
+              </a>
+            </li>
+            <li class="dropdown-divider"></li>
+            <li class="nav-link">
+              <a
+                href="javascript:void(0)"
+                ngbdropdownitem=""
+                class="dropdown-item nav-item"
+              >
+                Log out
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="separator d-lg-none"></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Send Invite Modal -->
+<div
+  class="modal fade"
+  id="sendModal"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="sendModal"
+  aria-hidden="true"
+>
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="sendModalLabel">Send Invite</h5>
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <table class="table">
+          <thead>
+            <tr>
+              <th class="text-center">#</th>
+              <th>Name</th>
+              <th>Position</th>
+              <th class="text-right"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let selectionInfo of selectionInfos">
+              <td class="text-center">{{ selectionInfo.shirtnumber }}</td>
+              <td>{{ selectionInfo.firstname }} {{ selectionInfo.lastname }}</td>
+              <td>{{ selectionInfo.position }}</td>
+              <td class="status text-center">
+                <div *ngIf="selectionInfo.status && selectionInfo.received">
+                  <i class="far fa-check-circle text-success"></i>
+                </div>
+                <div *ngIf="!selectionInfo.status && selectionInfo.received">
+                  <i class="far fa-times-circle text-danger"></i>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="modal-footer">
+        <button
+          type="button"
+          (click)="sendState('sendInvite')"
+          class="btn btn-secondary"
+        >
+          Send Invite
+        </button>
+        <button
+          type="button"
+          (click)="sendState('requestLineUp')"
+          class="btn btn-secondary"
+        >
+          Request Line Up
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

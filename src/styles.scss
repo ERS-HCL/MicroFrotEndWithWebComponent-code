@@ -1,0 +1,16 @@
+@import "assets/css/nucleo-icons.css";
+@import "assets/scss/black-dashboard";
+
+.navbar .navbar-brand {
+  position: relative;
+}
+.modal-content {
+  background-color: #27293d;
+  .modal-header .modal-title {
+    color: rgba(255, 255, 255, 0.8);
+  }
+}
+.navbar-brand i{
+    margin-right: 5px;
+    color: red;
+}
