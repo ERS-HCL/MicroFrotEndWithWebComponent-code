@@ -1,0 +1,82 @@
+<div class="row" id="webComponentLoader">
+  <div class="col-sm-12">
+    <div class="row" *ngIf="playersInfo">
+      <div *ngFor="let playerInfo of playersInfo" class="col-sm-4">
+        <div class="card card-user">
+          <div class="card-body">
+            <p class="card-text"></p>
+            <div class="author">
+              <div class="block block-one"></div>
+              <div class="block block-two"></div>
+              <div class="block block-three"></div>
+              <div class="block block-four"></div>
+              <div class="number">{{ playerInfo.shirtnumber }}</div>
+              <a href="javascript:void(0)"
+                ><img
+                  alt="..."
+                  src="assets/img/football-player.png"
+                  class="avatar"
+                />
+                <span class="text-on-shirt">{{ playerInfo.shirtnumber }}</span>
+                <h3 class="title">
+                  {{ playerInfo.firstname }} {{ playerInfo.lastname }}
+                </h3></a
+              >
+              <div class="framework">
+                <img alt="..." src="assets/img/javascript.png" />
+              </div>
+              <p class="description position">{{ playerInfo.position }}</p>
+              <skill-progress *ngIf="webComponentLoaded" label="Passing" progress="90"></skill-progress>
+              <skill-progress *ngIf="webComponentLoaded" label="Shooting" progress="70"></skill-progress>
+              <skill-progress *ngIf="webComponentLoaded" label="dribbling" progress="60"></skill-progress>
+              <skill-progress
+                *ngIf="webComponentLoaded"
+                label="Check"
+                progress="40"
+              ></skill-progress>
+              <!-- <ng-containter *ngFor="let skill of playerInfo.skills">
+              <div *ngIf="webComponentLoaded && playersInfo">
+                {{skill.key}} / {{skill.value}}
+                  <skill-progress
+                    [attr.label]="skill.key"
+                    [attr.progress]="skill.value"
+                  ></skill-progress>
+                </div>
+              </ng-containter> -->
+            </div>
+          </div>
+          <div *ngIf="showButtons" class="card-footer">
+            <div class="button-container">
+              <button
+                href="javascript:void(0)"
+                class="btn btn-icon btn-round btn-primary"
+                (click)="sendInvite(playerInfo.id, true)"
+              >
+                <i class="fas fa-calendar-check"></i>
+              </button>
+              <button
+                href="javascript:void(0)"
+                class="btn btn-icon btn-round btn-danger"
+                (click)="sendInvite(playerInfo.id, false)"
+              >
+                <i class="far fa-times-circle"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4 d-none">
+    <news-widget
+      title="Maecenas congue, ante quis dignissim imperdiet"
+      content=" Proin maximus sapien eu interdum pharetra. In sit amet urna vitae orci luctus porttitor vitae lacinia ligula. Suspendisse molestie justo a ante iaculis, a dignissim lectus pulvinar. Integer fermentum urna at odio commodo, non vehicula lacus mattis. Pellentesque congue neque ac justo ultricies fermentum."
+      author="John Deo"
+    ></news-widget>
+    <news-widget
+      title="Maecenas congue, ante quis dignissim imperdiet"
+      content=" Proin maximus sapien eu interdum pharetra. In sit amet urna vitae orci luctus porttitor vitae lacinia ligula. Suspendisse molestie justo a ante iaculis, a dignissim lectus pulvinar. Integer fermentum urna at odio commodo, non vehicula lacus mattis. Pellentesque congue neque ac justo ultricies fermentum."
+      author="John Deo"
+    ></news-widget>
+  </div>
+</div>

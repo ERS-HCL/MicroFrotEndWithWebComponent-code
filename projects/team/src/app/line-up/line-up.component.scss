@@ -1,0 +1,28 @@
+.card-body {
+  text-align: center;
+  .row {
+    height: 100px;
+  }
+  .framework {
+    float: left;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 15px;
+    img {
+      border-radius: 0px;
+    }
+  }
+  soccer-player {
+    position: relative;
+    left: 50%;
+  }
+}
+
+.card img.avatar {
+  width: 48px;
+  height: 48px;
+}
+.player-name {
+  color: #ffffff;
+}

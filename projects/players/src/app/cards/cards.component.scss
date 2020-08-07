@@ -1,0 +1,53 @@
+.card-user {
+  h3 {
+    margin-bottom: 10px;
+    color: #e14eca;
+  }
+  .number {
+    position: absolute;
+    top: -40px;
+    left: 20px;
+    font-size: 160px;
+    color: rgba(255, 255, 255, 0.3);
+  }
+  .text-on-shirt {
+    position: absolute;
+    z-index: 1;
+    font-size: 12px;
+    border: 81px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1) !important;
+    margin-bottom: 0px;
+    top: 140px;
+    left: 160px;
+  }
+  .avatar {
+    width: 124px;
+    height: 124px;
+    border: 5px solid #b044a5;
+    border-bottom-color: #62356a;
+    background-color: #27293d;
+    position: relative;
+  }
+  .position {
+    text-transform: capitalize;
+  }
+  .framework {
+    float: left;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 15px;
+    top: 211px;
+    img {
+      border-radius: 0px;
+    }
+  }
+  .card-footer {
+    padding: 0 15px;
+  }
+}
+.small{
+font-size: 4px;
+color: #27293d;
+}

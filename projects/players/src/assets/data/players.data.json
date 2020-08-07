@@ -1,0 +1,126 @@
+{
+    "error":"0","total":"10",
+    "data":[
+    {
+      "id":"EDGE_01",
+      "firstname": "Sergio",
+      "lastname": "Romero",
+      "shirtnumber": "22",
+      "position": "goalkeeper",
+      "statusSent":"false",
+      "quote": "I work really hard to prepare myself for when the opportunity comes along.",
+      "skills":[{"key":"Passing","value":"71"},{"key":"cleanSheets","value":"30"},{"key":"dribbling","value":"60"}],
+      "stats":[{"key":"age","value":"29","icon":"fa-birthday-cake"},{"key":"appearence","value":"234","icon":"fa-address-card"},{"key":"clean sheets","value":"60","icon":"fa-hand-sparkles"},{"key":"minutes played","value":"2355","icon":"fa-stopwatch"}]
+    },
+      {
+      "id":"EDGE_02",
+      "firstname": "Victor",
+      "lastname": "Lindelof",
+      "shirtnumber": "2",
+      "position": "defender",
+      "statusSent":"false",
+      "quote": "United are one of the biggest clubs in the world and always want to win titles. That’s also my goal. ",
+      "skills":[{"key":"passing","value":"71"},{"key":"shooting","value":"30"},{"key":"dribbling","value":"60"}],
+      "stats":[{"key":"age","value":"25","icon":"fa-birthday-cake"},{"key":"appearence","value":"104","icon":"fa-address-card"},{"key":"goals","value":"2","icon":"fa-futbol"},{"key":"minutes played","value":"2311","icon":"fa-stopwatch"}]
+    },
+    {
+    "id":"EDGE_03",
+      "firstname": "Eric",
+      "lastname": "Bailly",
+      "shirtnumber": "3",
+      "position": "defender",
+      "statusSent":"false",
+      "quote": "To play football at the highest level is all I have ever wanted to do.",
+      "skills":[{"key":"passing","value":"60"},{"key":"shooting","value":"27"},{"key":"dribbling","value":"65"}],
+      "stats":[{"key":"age","value":"26","icon":"fa-birthday-cake"},{"key":"appearence","value":"79","icon":"fa-address-card"},{"key":"goals","value":"1","icon":"fa-futbol"},{"key":"minutes played","value":"1344","icon":"fa-stopwatch"}]
+    },
+    {
+    "id":"EDGE_04",
+      "firstname": "Phil",
+      "lastname": "Jones",
+      "shirtnumber": "4",
+      "position": "defender",
+      "statusSent":"false",
+      "quote": "I just love to defend. I want to stop goals going in the net.",
+      "skills":[{"key":"passing","value":"74"},{"key":"shooting","value":"28"},{"key":"dribbling","value":"57"}],
+      "stats":[{"key":"age","value":"28","icon":"fa-birthday-cake"},{"key":"appearence","value":"224","icon":"fa-address-card"},{"key":"goals","value":"6","icon":"fa-futbol"},{"key":"minutes played","value":"1677","icon":"fa-stopwatch"}]
+    },
+    {
+    "id":"EDGE_05",
+      "firstname": "Harry",
+      "lastname": "Maguire",
+      "shirtnumber": "5",
+      "position": "defender",
+      "statusSent":"false",
+      "quote": "It's an amazing club. It's a club I've always watched and I always looked up to when I was younger.",
+      "skills":[{"key":"passing","value":"75"},{"key":"shooting","value":"35"},{"key":"dribbling","value":"64"}],
+      "stats":[{"key":"age","value":"27","icon":"fa-birthday-cake"},{"key":"appearence","value":"41","icon":"fa-address-card"},{"key":"goals","value":"2","icon":"fa-futbol"},{"key":"minutes played","value":"1577","icon":"fa-stopwatch"}]
+    },
+      {
+      "id":"EDGE_06",
+      "firstname": "Paul",
+      "lastname": "Pogba",
+      "shirtnumber": "6",
+      "position": "Midfielder",
+      "statusSent":"false",
+      "quote": "I want to be the midfielder who can do everything, and at the highest levels: shoot, dribble, score, defend.",
+      "skills":[{"key":"passing","value":"87"},{"key":"shooting","value":"20"},{"key":"dribbling","value":"83"}],
+      "stats":[{"key":"age","value":"27","icon":"fa-birthday-cake"},{"key":"appearence","value":"150","icon":"fa-address-card"},{"key":"goals","value":"31","icon":"fa-futbol"},{"key":"minutes played","value":"3400","icon":"fa-stopwatch"}]
+    },
+    {
+      "id":"EDGE_07",
+      "firstname": "Jesse",
+      "lastname": "Lingard",
+      "shirtnumber": "14",
+      "position": "Midfielder",
+      "statusSent":"false",
+      "quote": "I feel great pride every time I pull the shirt on.",
+      "skills":[{"key":"passing","value":"87"},{"key":"shooting","value":"20"},{"key":"dribbling","value":"83"}],
+      "stats":[{"key":"age","value":"27","icon":"fa-birthday-cake"},{"key":"appearence","value":"202","icon":"fa-address-card"},{"key":"goals","value":"32","icon":"fa-futbol"},{"key":"minutes played","value":"2344","icon":"fa-stopwatch"}]
+    },
+    {
+      "id":"EDGE_08",
+      "firstname": "Juan",
+      "lastname": "Mata",
+      "shirtnumber": "8",
+      "position": "Midfielder",
+      "statusSent":"false",
+      "quote": "I try to play with the ball – possession, passes, assists – but scoring goals has also been a big part of my career",
+      "skills":[{"key":"passing","value":"87"},{"key":"shooting","value":"20"},{"key":"dribbling","value":"83"}],
+      "stats":[{"key":"age","value":"32","icon":"fa-birthday-cake"},{"key":"appearence","value":"248","icon":"fa-address-card"},{"key":"goals","value":"48","icon":"fa-futbol"},{"key":"minutes played","value":"2134","icon":"fa-stopwatch"}]
+    },
+      {
+      "id":"EDGE_09",
+      "firstname": "Alexis",
+      "lastname": "Sanchez",
+      "shirtnumber": "7",
+      "position": "Forward",
+      "statusSent":"false",
+      "quote": "It's a dream to play for United. I looked at the badge and my hairs just stood up on end.",
+      "skills":[{"key":"passing","value":"91"},{"key":"shooting","value":"31"},{"key":"dribbling","value":"60"}],
+      "stats":[{"key":"age","value":"31","icon":"fa-birthday-cake"},{"key":"appearence","value":"45","icon":"fa-address-card"},{"key":"goals","value":"5","icon":"fa-futbol"},{"key":"minutes played","value":"600","icon":"fa-stopwatch"}]
+    },
+      {
+      "id":"EDGE_10",
+      "firstname": "Odion",
+      "lastname": "Ighalo",
+      "shirtnumber": "25",
+      "position": "Forward",
+      "statusSent":"false",
+      "quote": "I never thought this was going to happen, but dreams do come true.",
+      "skills":[{"key":"passing","value":"80"},{"key":"shooting","value":"78"},{"key":"dribbling","value":"55"}],
+      "stats":[{"key":"age","value":"31","icon":"fa-birthday-cake"},{"key":"appearence","value":"8","icon":"fa-address-card"},{"key":"goals","value":"4","icon":"fa-futbol"},{"key":"minutes played","value":"458","icon":"fa-stopwatch"}]
+    }
+    ,
+      {
+      "id":"EDGE_11",
+      "firstname": "Anthony",
+      "lastname": "Martial",
+      "shirtnumber": "9",
+      "position": "Forward",
+      "statusSent":"false",
+      "quote": "I love Manchester United, I love the fans, they give me a lot of joy.",
+      "skills":[{"key":"passing","value":"98"},{"key":"shooting","value":"87"},{"key":"dribbling","value":"70"}],
+      "stats":[{"key":"age","value":"24","icon":"fa-birthday-cake"},{"key":"appearence","value":"208","icon":"fa-address-card"},{"key":"goals","value":"64","icon":"fa-futbol"},{"key":"minutes played","value":"1788"}]
+    }
+  ]}

@@ -1,0 +1,92 @@
+/* Details Page */
+.profile-page {
+  position: relative;
+  /* background: #050505; */
+
+  .profile-title {
+    /* position: absolute;
+      top: 110px;
+      left: 60px; */
+    color: #e14eca;
+    margin-bottom: 10px;
+  }
+  .text-left {
+    text-align: left !important;
+  }
+  .firstName {
+    top: 80px;
+  }
+  .lastName {
+    font-weight: 100;
+  }
+  .text-on-back {
+    position: absolute;
+    z-index: 1;
+    font-size: 30px;
+    border: 81px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.8) !important;
+    margin-bottom: 0px;
+    bottom: -5px;
+    left: 96px;
+  }
+  .framework {
+    float: left;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: 12px;
+    top: 8px;
+    z-index: 1;
+    img {
+      border-radius: 0px;
+    }
+  }
+  .quote {
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    font-weight: 400;
+    font-size: 18px;
+    position: relative;
+    top: -9px;
+    margin: 0 5px;
+  }
+  p.profile-description {
+    max-width: 450px;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 100;
+  }
+  /*  .card-header {
+      width: 200px;
+    } */
+  .statsKey {
+    text-transform: uppercase;
+    color: #e14eca !important;
+  }
+  .card-stats {
+    margin-bottom: 0;
+  }
+  .card .card-body {
+    padding: 15px;
+  }
+  .card-stats .icon-big {
+    font-size: 3em;
+    min-height: 64px;
+  }
+  .card-stats .card-body .numbers {
+    text-align: right;
+    font-size: 2em;
+  }
+  .card-stats .card-body .numbers p {
+    margin-bottom: 0;
+  }
+  .profile {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    margin-bottom: 15px;
+  }
+}
