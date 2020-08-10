@@ -45,7 +45,7 @@ export class AppComponent implements OnInit {
     });
 
     this.router.initialNavigation(); // Manually triggering initial navigation for @angular/elements ?
-    this.router.navigate(['/players/cards']);
+    // this.router.navigate(['/players/cards']);
 
     // just for demonstration!
     setTimeout(() => {
